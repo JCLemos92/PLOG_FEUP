@@ -28,7 +28,7 @@ combina(Prato,Bebida):-
     comida(Prato),
     bebida(Bebida).
 
-%como está tudo ligado vai dizer yes a tudo, para o RC5 vou criar condições que assim não tem piada
+%como está tudo ligado vai dizer yes a tudo assim não tem piada
 a:- casado(ana,bruno),
     gosta(ana,vinho_verde),
     gosta(bruno,vinho_verde).
