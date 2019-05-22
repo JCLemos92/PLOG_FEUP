@@ -1,0 +1,8 @@
+homem(luis).
+homem(miguel).
+mulher(cristina).
+mulher(sofia).
+mulher(ines).
+pai(miguel,luis).
+pai(miguel,sofia).
+mae(cristina,luis).

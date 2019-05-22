@@ -1,0 +1,49 @@
+:-use_module(library(clpfd)).
+
+1º - Definir Variaveis:
+
+Por exemplo: 
+	length(L,N).
+
+2º - Definir Dominios:
+
+X in 0..5.
+domain(L,1,5).
+
+3º - Definir restricoes:
+
+Restricoes aritmeticas:
+
+A#<B - A tem de ser menor que B. Nao vai instanciar nada, so funciona se A e B estiverem instanciados. O dominio de uma variavel restringe o dominio da outra.
+
+A+B #= C o valor da soma tem de ser igual ao valor da terceira, mais uma vez o dominio de uma restringe o dominio da outra.
+
+Restricoes Logicas:
+
+(...) #\/ (...) - Equivale a um OU logico
+
+(...) #/\ (...) - Equivale a um E logico
+
+Restricoes :
+
+all_distinct(L) - mais eficiente que all_different(L), que verifica que todas a variaveis na lista L sao todas diferentes.
+
+4º - Pesquisa de solucoes:
+
+labeling([],L) - L: lista ve variaveis que queremos ter solucoes.
+
+
+
+//////////////////////////////////
+
+element(Index,List,Elem) = List[Index] = Elem
+
+
+global_cardinality(List,Values) = quantas vezes o valor se repete em list.[Values-Amount]
+
+Sum(List,RelOp,Value): RelOp pode ser #< #> #=... dá o sumatorio dos valores dentro de uma lista.
+
+scalar_product(Coeff,List,RelOp,Value): Coeff - lista de pesos, e assim conseguimos ter uma funcao para calcular uma soma pesada.
+
+count(Val,List,RelOp,Count)
+ 

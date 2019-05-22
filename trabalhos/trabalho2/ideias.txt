@@ -1,0 +1,7 @@
+Matriz de medidas e critérios (sendo os critérios pesos) 
+
+cri1  cri2 cri3 cri4    custo 
+[0.2, 0.4, 0.5, 0.6]	1200
+[0.1, 0.1, 0.7, 0.5]	800
+[0.5, 0.2, 0.8, 0.2]	700
+[0.1, 0.6, 0.2, 0.1]	1300
